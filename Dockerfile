@@ -5,7 +5,7 @@ RUN pip install selenium
 
 # RUN echo 'Xvfb :99 -screen 0 1024x768x24 -nolisten tcp &' > /etc/profile.d/run_xvfb.sh
 
-RUN Xvfb :99 &
+# RUN Xvfb :99 &
 ENV DISPLAY=:99
 
 WORKDIR /code
